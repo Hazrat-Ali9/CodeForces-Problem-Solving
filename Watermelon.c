@@ -1,15 +1,14 @@
+// Hazart Ali
+// University Of Scholars
+#include <stdio.h>
 
-#include<stdio.h>
-
-int main ()
+int main()
 {
-    int n;
-    scanf("%d",&n);
+        int n;
+        scanf("%d", &n);
 
-    if(n!=2 && n%2==0)
-            printf("YES\n");
-    else
-            printf("NO\n");
-
+        if (n != 2 && n % 2 == 0)
+                printf("YES\n");
+        else
+                printf("NO\n");
 }
-

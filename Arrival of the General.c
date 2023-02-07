@@ -1,8 +1,8 @@
+// Hazart Ali
+// University Of Scholars
 #include<stdio.h>
-
 int main(void)
-{
-    int n,maxx=-1,minn=999999,minn_index,maxx_index;
+{    int n,maxx=-1,minn=999999,minn_index,maxx_index;
     scanf("%d",&n);
     int A[n];
     for(int i=0; i<n; i++)

@@ -1,5 +1,6 @@
+// Hazart Ali
+// University Of Scholars
 #include<stdio.h>
-
 int main()
 {
     int a,b,year;

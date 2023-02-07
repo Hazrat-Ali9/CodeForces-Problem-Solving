@@ -1,5 +1,6 @@
+// Hazart Ali
+// University Of Scholars
 #include<stdio.h>
-
 int main(void)
 {
     int n,count=0;

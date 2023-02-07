@@ -1,24 +1,33 @@
-#include<bits/stdc++.h>
+// Hazart Ali
+// University Of Scholars
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
 
-     long long i,m,n,x,ans,a[100001];
-     while(cin>>n>>m){
-        for(i=0;i<m;i++){
+    long long i, m, n, x, ans, a[100001];
+    while (cin >> n >> m)
+    {
+        for (i = 0; i < m; i++)
+        {
 
-            cin>>a[i];
+            cin >> a[i];
         }
-        x=1,ans=0;
-        for(i=0;i<m;i++){
-            if(a[i]>=x){
-                ans+=a[i]-x;
-                x=a[i];
+        x = 1, ans = 0;
+        for (i = 0; i < m; i++)
+        {
+            if (a[i] >= x)
+            {
+                ans += a[i] - x;
+                x = a[i];
             }
-            else{
-                ans+=(n+a[i])-x;
-                x=a[i];
-                }
+            else
+            {
+                ans += (n + a[i]) - x;
+                x = a[i];
+            }
         }
-        cout<<ans<<endl;
-     }
-return 0;}
+        cout << ans << endl;
+    }
+    return 0;
+}

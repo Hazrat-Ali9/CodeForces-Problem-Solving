@@ -1,5 +1,6 @@
+// Hazart Ali
+// University Of Scholars
 #include<stdio.h>
-
 int main()
 {
     int t;
@@ -26,5 +27,5 @@ int main()
     }
 
 }
-//BANBANBAN
-//123456789
+
+

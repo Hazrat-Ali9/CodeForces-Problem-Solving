@@ -1,3 +1,5 @@
+// Hazart Ali
+// University Of Scholars
 #include<stdio.h>
 #include<string.h>
 int main()
