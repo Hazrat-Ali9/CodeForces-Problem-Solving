@@ -16,7 +16,7 @@ int main()
     {
         for(j=0;j<5;j++)
         {
-//            printf("%d",A[i][j]);
+ 
 
             if(A[i][j]==1)
             {
