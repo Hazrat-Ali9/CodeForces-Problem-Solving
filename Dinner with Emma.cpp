@@ -1,5 +1,3 @@
-// Hazart Ali
-// University Of Scholars
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -8,7 +6,7 @@ int main()
     while(cin>>n>>m){
             vector<long long>v;
         for(i=0;i<n;i++){
-                min=10000000;
+                min=100000000000;
             for(j=0;j<m;j++){
                 cin>>cost;
             if(min>cost)
