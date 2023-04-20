@@ -1,3 +1,5 @@
+// Hazart Ali
+// University Of Scholars
 #include<bits/stdc++.h>
 using namespace std;
 long long a[101][101],f[101],ans[101];
