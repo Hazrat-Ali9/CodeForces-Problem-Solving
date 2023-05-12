@@ -1,4 +1,5 @@
-// 
+// Hazart Ali
+// University Of Scholars
 #include <iostream>
 #include <vector>
 #include <algorithm>
