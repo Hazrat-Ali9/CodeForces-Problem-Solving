@@ -1,9 +1,9 @@
-// Hazart Ali
-// University Of Scholars
+///Bismillahir Rahmanir rahim///
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
-
+#define pb push_back
+#define mp make_pair
 int main()
 {
     ll i,j,n,m,x,cnt;
