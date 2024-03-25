@@ -12,6 +12,7 @@ int main()
             }
             cin>>m>>n;
         for(i=m;i<=n-1;i++)
+        
         {
             sum=sum+a[i];
         }
