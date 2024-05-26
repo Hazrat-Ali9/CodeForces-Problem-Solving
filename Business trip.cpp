@@ -1,33 +1,33 @@
-// Hazart Ali
-// University Of Scholars
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
+
 int main()
 {
-    ll height,i;
-    while(cin>>height)
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int n,ans=0;
+    cin >> n;
+    vector<int> A(12);
+    for(int i=0; i<12; i++)
+        cin >> A[i];
+
+    if(n==0)
+        cout << ans << '\n';
+    else
     {
-        ll a[12];
-        for(i=0;i<12;i++)
-            cin>>a[i];
-
-        sort(a,a+12);
-
-        if(height==0){
-            cout<<0<<endl;
-            return 0;
+        sort(A.rbegin(),A.rend());
+        int k=0;
+        for(int i=0; i<12 && k<n; i++)
+        {
+            k+=A[i];
+            ans++;
         }
-        reverse(a,a+12);
-        ll month=-1,sum=0;
-        for(i=0;i<12;i++){
-            sum+=a[i];
-            if(sum>=height){
-                month=i+1;
-                break;
-            }
-        }
-        cout<<month<<endl;
+        if(k>=n)
+            cout << ans << '\n';
+        else
+            cout << "-1\n";
     }
     return 0;
 }
