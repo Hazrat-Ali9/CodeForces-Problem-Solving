@@ -1,23 +1,25 @@
-// Hazart Ali
-// University Of Scholars
 #include<bits/stdc++.h>
-#define ll long long
 using namespace std;
+
 int main()
 {
-    ll i,n;
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int n,ans=0;
     string s;
-    while(cin>>n>>s)
+
+    cin >> n >> s;
+
+    for(int i=0; i<n; i++)
     {
-        ll one=0,zero=0,ans;
-        for(i=0;i<s.size();i++){
-            if(s[i]=='0')
-                zero++;
-            else
-                one++;
-        }
-        ans=abs(one-zero);
-        cout<<ans<<endl;
+        if(s[i]=='1')
+            ans++;
+        else
+            ans--;
     }
+    cout << abs(ans);
+
     return 0;
 }
