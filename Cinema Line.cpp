@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    long int p,q,r,n,c,i,a[101];
+    long int p,q,r,n,c,i,a[100001];
     while(cin>>n)
     {
         for(i=0; i<n; i++)
