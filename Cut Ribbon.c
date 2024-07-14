@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
+
 int main()
 {
     long int i,j,a,b,c,n,k,ans,rem;
