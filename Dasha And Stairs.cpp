@@ -1,26 +1,19 @@
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-#define sf scanf
-#define pf printf
-
-int main (void)
+#define ll long long
+#define pb push_back
+#define mp make_pair
+int main()
 {
-    int a,b;
-
-    while (cin >> a >> b)
-    {
-        if (a == 0 && b == 0)
-            cout << "NO" << endl;
+    ll a,b,n,ans;
+    while(cin>>a>>b){
+        if(b==a && b!=0)
+            cout<<"YES\n";
+        else if(b-a==1)
+            cout<<"YES\n";
         else
-        {
-            if (abs(a-b) == 1 || a == b)
-                cout << "YES" << endl;
-            else
-                cout << "NO" << endl;
-        }
+            cout<<"NO\n";
     }
-
     return 0;
 }
