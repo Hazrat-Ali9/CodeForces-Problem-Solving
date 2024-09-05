@@ -7,3 +7,5 @@ int main()
     printf("%d\n",m*n/2);
     return 0;
 }
+
+// Domino Program
