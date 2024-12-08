@@ -1,5 +1,3 @@
-// Hazart Ali
-// University Of Scholars
 #include<bits/stdc++.h>
 using namespace std;
 int main()
