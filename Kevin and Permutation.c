@@ -16,7 +16,7 @@
             int a=z/2; int b=2*a;
             for(int q=1;q<=z/2;q++)
             {
-
+// Kevin and Permutation
                 printf("%d %d " ,a,b);
                 a--; b--;
             }
