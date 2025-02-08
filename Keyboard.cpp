@@ -1,49 +1,68 @@
-// Hazart Ali
-// University Of Scholars
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
+
 int main()
 {
-    long long i, j, d, ans;
-    string s, s1, s2, s3;
-    char p;
-    s1 = "qwertyuiop";
-    s2 = "asdfghjkl;";
-    s3 = "zxcvbnm,./";
-    while (cin >> p >> s)
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
+    string s1 = "qwertyuiop";
+    string s2 = "asdfghjkl;";
+    string s3 = "zxcvbnm,./";
+
+
+    char c;
+    string s;
+    cin>> c >> s;
+
+    for(int i=0;i<s.size();i++)
     {
-        if (p == 'R')
-            d = -1;
-        else
-            d = 1;
-        for (i = 0; i < s.size(); i++)
+        bool f=false;
+
+        for(int j=0;j<s1.size();j++)
         {
-            for (j = 0; j < s1.size(); j++)
+            if(s[i]== s1[j])
             {
-                if (s[i] == s1[j])
-                {
-                    s[i] = s1[j + d];
-                    break;
-                }
-            }
-            for (j = 0; j < s2.size(); j++)
-            {
-                if (s[i] == s2[j])
-                {
-                    s[i] = s2[j + d];
-                    break;
-                }
-            }
-            for (j = 0; j < s3.size(); j++)
-            {
-                if (s[i] == s3[j])
-                {
-                    s[i] = s3[j + d];
-                    break;
-                }
+                if(c=='L')
+                    cout<< s1[j+1];
+                else
+                    cout<< s1[j-1];
+
+                f=true;
+                break;
             }
         }
-        cout << s << endl;
+        if(f)
+            continue;
+        for(int j=0;j<s2.size();j++)
+        {
+            if(s[i]== s2[j])
+            {
+                if(c=='L')
+                    cout<< s2[j+1];
+                else
+                    cout<< s2[j-1];
+
+                f=true;
+                break;
+            }
+        }
+        if(f)
+            continue;
+        for(int j=0;j<s3.size();j++)
+        {
+            if(s[i]== s3[j])
+            {
+                if(c=='L')
+                    cout<< s3[j+1];
+                else
+                    cout<< s3[j-1];
+
+                break;
+            }
+        }
     }
+
+
     return 0;
 }
