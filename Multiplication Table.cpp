@@ -1,23 +1,22 @@
-// Hazart Ali
-// University Of Scholars
 #include<bits/stdc++.h>
 using namespace std;
+
 int main()
 {
-    long int x,m,n,i,ans;
-    while(cin>>m>>n)
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    int x,y;
+    cin >> x >> y;
+    int cnt=0;
+    for(int i=1; i<=x; i++)
     {
-        ans=0;
-        if(m>n)
-            m=n;
-        for(i=m; i>=1; i--)
-        {
-            if(n/i>m)
-                break;
-            if(n%i==0)
-                ans=ans+1;
-        }
-        cout<<ans<<endl;
+        if(y%i==0 && y / i <= x)
+            cnt++;
     }
+    cout << cnt << '\n';
+
     return 0;
 }
+
