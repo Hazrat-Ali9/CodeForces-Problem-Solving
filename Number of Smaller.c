@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// Number of Smaller
 int main()
 {
     int m,n;
