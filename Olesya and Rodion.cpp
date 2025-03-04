@@ -1,24 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 int main()
 {
-    long int x,y,n,i,t;
-    while(cin>>n>>t){
-        if(n==1&&t==10)
-            cout<<"-1\n";
-        else if(n>=2&&t==10)
-        {
-            for(i=1;i<n;i++){
-                cout<<"1";
-            }
-            cout<<"0\n";
-        }
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int x,c;
+    cin >> x >> c;
+
+    if(c!=10)
+        while(x--)
+            cout<<c;
+
+    else
+    {
+        if(x==1)
+            cout<< "-1";
         else
         {
-            for(i=1;i<=n;i++){
-                cout<<t;
-            }
-            cout<<endl;
+            x--;
+            while(--x)
+                cout<< "1";
+            cout<< c;
         }
     }
     return 0;
