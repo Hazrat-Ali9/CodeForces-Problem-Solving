@@ -37,10 +37,4 @@ int main()
     }
 
 }
-//alice will move first
-//if first vallue 1; alice win  a=1 4 b=4 0 a=0 3  a=
-//                              a=0 4 a=lose
-
-//if first  Bob wins
-//else Alice wins
 
