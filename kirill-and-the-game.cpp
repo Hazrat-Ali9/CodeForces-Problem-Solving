@@ -20,4 +20,4 @@ int main() {
   return 0;
 }
 
-// l=a r=b= x=m y=n k=p found =temp
+
