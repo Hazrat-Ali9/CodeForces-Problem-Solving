@@ -4,9 +4,9 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
-  int n, k;
-  cin >> n >> k;
-  vector<string> s(n - k + 1);
+  int a, b;
+  cin >> a >> b;
+  vector<string> s(a - b + 1);
   for (int i = 0; i < s.size(); i++) {
     cin >> s[i];
   }
