@@ -13,7 +13,7 @@ int main() {
       continue;
     }
     if (w == b or w == c) {
-      y = 6 - b - c;
+      c = 6 - b - c;
       b = w;
     } else {
       ok = false;
@@ -26,3 +26,4 @@ int main() {
   }
   return 0;
 }
+
