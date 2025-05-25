@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// Adjacent Replacement
 int main() {
   int n;
   cin >> n;
