@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// algorithm
 int main() {
   int n;
   cin >> n;
