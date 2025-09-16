@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// Div Times Mod
 int main() {
   int n, k;
   cin >> n >> k;
