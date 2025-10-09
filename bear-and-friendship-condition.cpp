@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// Bear and Friendship Condition
 int n, m;
 vector<vector<int>> g;
 vector<int> color;
