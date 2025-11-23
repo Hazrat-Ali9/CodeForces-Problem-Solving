@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// Coin 
 int main() {
   long long n, s;
   cin >> n >> s;
